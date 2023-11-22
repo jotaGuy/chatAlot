@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile Form</title>
+    <!-- Add your external stylesheets or styles here if needed -->
+    <link rel="stylesheet" href="../screen-styles/profile.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>User Profile</h2>
+      <form id="form" action="localhost:8000/profile" method="POST">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required />
+
+        <label for="username">Change Username:</label>
+        <input type="text" id="username" name="username" required />
+        <div class="send">
+          <button type="submit">Save Changes</button>
+        </div>
+      </form>
+    </div>
+    <script src="../../script/home.js"></script>
+  </body>
+</html>

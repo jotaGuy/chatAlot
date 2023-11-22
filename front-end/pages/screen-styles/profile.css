@@ -1,0 +1,150 @@
+/* profile-styles.css */
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 700px) {
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.user-insight-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.insight-list {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  box-shadow: 0px 5px 10px #e0e0e0;
+  transition: transform 0.2s ease-in-out;
+  margin: 5px;
+
+  animation: glowing 1100ms infinite;
+}
+
+.insight-list:hover {
+  animation: bounce 3s ease infinite;
+}
+
+@keyframes bounce {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes glowing {
+    0% {
+      box-shadow: 0 0 5px rgb(224, 123, 123);
+    }
+    50% {
+        box-shadow: 0 0 20px rgb(222, 222, 99);
+      }
+    100% {
+      box-shadow: 0 0 20px rgb(143, 200, 143);
+    }
+  }
+
+  .friends, .dm, .unread-dm, .group-chat {
+    border-color: rgb(121, 194, 121);
+    animation: glowing 1600ms infinite;/* Added bounce animation */
+  }
+
+.user-details {
+  margin-top: 50px;
+}
+
+.user-insight-title {
+  text-align: center;
+}
+
+.user-personal-details {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Specify 2 columns with equal width */
+  grid-template-rows: repeat(3, 1fr); /* Specify 3 rows with equal height */
+  gap: 10px; /* Add some gap between grid items */
+}
+
+.user-first-name {
+  grid-column: 1;
+  grid-row: 1; /* Combine two rows for the name */
+}
+
+.user-last-name {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.user-name {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  text-align: center;
+}
+
+.user-email {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.user-phone {
+  grid-column: 2;
+  grid-row: 3; /* Combine two rows for the phone */
+}
+
+.user-list {
+  height: 50px;
+  text-align: center;
+  background-color: #edf2f2;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 250px; /* Set the width to 200px for all input fields */
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

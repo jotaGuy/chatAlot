@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../screen-styles/home-screen.css" />
+    <link rel="stylesheet" href="../screen-styles/profile.css" />
+    <!-- Link to the new CSS file -->
+  </head>
+  <body>
+    <div class="nav-header-container">
+      <section class="head-container">
+        <div class="title-container">
+          <h1 class="page-title">Home Screen</h1>
+        </div>
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li class="nav-link">
+              <a href="./home-screen.html">Home |</a>
+            </li>
+            <li class="nav-link">
+              <a href="./profile.html">Profile |</a>
+            </li>
+            <li class="nav-link">
+              <a href="./messages.html">Direct Messages |</a>
+            </li>
+            <li class="nav-link">
+              <a href="./friends-list.html">Friends List</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="body-container">
+      <div class="user-data">
+        <h2>User Information</h2>
+        <div class="user-insight">
+          <h4 class="user-insight-title">
+            <u>User Stats</u>
+          </h4>
+          <ul class="user-insight-list">
+            <!-- each list child will append a child with the value response -->
+            <div>
+              <li class="friends insight-list">Friends: 10</li>
+            </div>
+            <div class="">
+              <li class="dm insight-list">Private Messages: 20</li>
+            </div>
+            <div>
+              <li class="unread-dm insight-list">Unread Messages: 30</li>
+            </div>
+            <div>
+              <li class="group-chat insight-list">
+                Total Messages in Group Chat: 40
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="user-details">
+          <h4 class="user-insight-title">
+            <u>User Details</u>
+          </h4>
+          <ul class="user-personal-details">
+            <!-- each list child will append a child with the value response -->
+            <div class="user-list user-first-name">First Name:</div>
+            <div class="user-list user-last-name">Last Name:</div>
+            <div class="user-list user-name">User Name:</div>
+            <div class="user-list user-email">Email:</div>
+            <div class="user-list user-phone">Phone Number:</div>
+          </ul>
+        </div>
+      </div>
+      <div class="edit">
+        <a href="./update-profile.html">
+          <button>Edit Profile</button>
+        </a>
+      </div>
+    </div>
+    <script src="../../script/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.head-container {
+  background: linear-gradient(to right, #add8e6, #d3d3d3);
+}
+
+/* page title styling */
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.page-title {
+  font-style: oblique;
+}
+
+/* nav styling */
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid black;
+  padding: 0px 10px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  font-style: oblique;
+}
+
+.nav-link {
+  padding: 7.5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* body styling  */
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 
+@media screen and (max-width: 700px) {
+  .body-container {
+      display: flex;
+      flex-direction: column;
+  }
+} */
+
+/* data table styling */
+
+.data-container {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.data-card-header {
+    text-align: center;
+}
+
+.data-list {
+    line-height: 40px;
+    list-style: none;
+    display: flex;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    align-self: center;
+    margin-left: 10px;
+    margin: 5px;
+}
+
+.total-messages, .total-users, .user-messages, .total-friends{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+@keyframes glowing {
+    0% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+    }
+    100% {
+      background-color: #49e819;
+      box-shadow: 0 0 20px #49e819;
+    }
+  }
+
+.messages {
+    background-color: green;
+    animation: glowing 1300ms infinite
+}
+
+.users {
+    background-color: yellow;  
+    animation: glowing 1100ms infinite
+}
+
+.sent-messages {
+    background-color: blue;
+    animation: glowing 1300ms infinite
+}
+
+.friend {
+    background-color: red;
+    animation: glowing 1100ms infinite
+}
+
+/* style card */
+
+.card-container {
+  width: 450px;
+}
+
+.card-header {
+  text-align: center;
+  height: 25px;
+}
+
+.card-body {
+  text-align: left;
+  padding: 5px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 2.5px;
+  box-shadow: 2px 5px 10px #add8e6;
+  height: 250px
+}
+
+.card-footer {
+  margin-top: 5px;
+  text-align: center;
+  height: 75px;
+  display: grid;
+  grid-template-columns: 70% 30%; /* Updated grid template columns */
+}
+
+.message-box {
+  grid-column: 1; /* This spans the first column (70%) */
+  grid-row: 1; /* Spans the entire height */
+  resize: none;
+}
+
+.send-button {
+  grid-column: 2; /* This spans the second column (30%) */
+  grid-row: 1; /* Spans the entire height */
+}
+
