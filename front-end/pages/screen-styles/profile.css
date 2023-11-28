@@ -70,6 +70,7 @@ body {
     border-color: rgb(121, 194, 121);
     animation: glowing 1600ms infinite;/* Added bounce animation */
   }
+  
 
 .user-details {
   margin-top: 50px;

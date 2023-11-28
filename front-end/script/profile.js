@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const phoneList = document.querySelector(".user-phone");
 
   // Update the content of the list elements with the form values
+  // if statements
   firstNameList.textContent = `First Name: ${firstName.length > 0 ? firstName : ''}`;
   lastNameList.textContent = `Last Name: ${lastName.length > 0 ? lastName : ''}`;
   userNameList.textContent = `User Name: ${phoneNumber.length > 0 ? phoneNumber : ''}`;

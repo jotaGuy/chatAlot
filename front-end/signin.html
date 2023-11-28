@@ -14,12 +14,13 @@
         class="image"
       />
       <h2 class="page-title">User Login</h2>
-      <form action="../pages/screens/home.html" class="signup-form">
+      <form action="../pages/screens/home.html" class="signup-form" id="loginForm">
         <input
           class="signup-fields"
           id="email-field"
           type="email"
           placeholder=" Username"
+          name="email-field"
           required
         />
         <input
@@ -27,18 +28,38 @@
           id="password-field"
           type="password"
           placeholder="Password"
+          name="password-field"
           required
         />
         <input
-            class="signup-fields"
-            id="submit-button"
-            type="submit"
-            value="Login"
-          />
+          class="signup-fields"
+          id="submit-button"
+          type="submit"
+          value="Login"
+        />
       </form>
       <div class="pass-reset">
         <a id="pass-reset" href="">Forgot Password</a>
       </div>
     </div>
+
+    <script>
+      // Get the form element by its ID
+      const loginForm = document.getElementById('loginForm');
+
+      // Add an event listener for form submission
+      loginForm.addEventListener('submit', function (event) {
+
+        // Use FormData to collect form data
+        const formData = new FormData(loginForm);
+
+        // Log the collected data to the console
+        console.log('Email:', formData.get('email-field'));
+        console.log('Password:', formData.get('password-field'));
+
+        // You can perform further actions here, such as sending the data to a server
+        // or validating the user credentials.
+      });
+    </script>
   </body>
 </html>

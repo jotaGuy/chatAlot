@@ -1,11 +1,9 @@
-/* css selector */
 body {
   display: column;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-/* css selector */
 .head-container {
   background: linear-gradient(to right, #add8e6, #d3d3d3);
 }
