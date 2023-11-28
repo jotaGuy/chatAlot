@@ -5,39 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Profile</title>
     <link rel="stylesheet" href="../screen-styles/home-screen.css">
+    <link rel="stylesheet" href="../screen-styles/friends.css">
     <style>
-      label {
-        display: block;
-        margin-bottom: 5px;
-      }
-
-      input {
+      table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
         width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
-        box-sizing: border-box;
       }
-
-      button {
-        background-color: #4caf50;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
+  
+      th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+  
+      th {
+        background-color: #f2f2f2;
+      }
+      /* css selector */
+      tr:nth-child(odd) {
+        background-color: rgb(236, 243, 251);
       }
     </style>
   </head>
   <body>
-    <div>
-      <section class="head-container">
+    <div class="head-container">
         <div class="title-container">
-          <h1 class="page-title">Home Screen</h1>
+          <h1 class="page-title">Friends</h1>
         </div>
         <div class="nav-container">
           <ul class="nav-list">
             <li class="nav-link">
-              <a href="./home-screen.html">Home |</a>
+              <a href="./home.html">Home |</a>
             </li>
             <li class="nav-link">
               <a href="./profile.html">Profile |</a>
@@ -50,10 +49,15 @@
             </li>
           </ul>
         </div>
-      </section>
     </div>
-    <div>
-        Friends List
-    </div>
+    <table id="userTable">
+      <tr>
+        <th>Profile Image</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+    </table>
+    <!-- external script -->
+    <script src="../../script/friends.js"></script>
   </body>
 </html>

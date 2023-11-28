@@ -1,0 +1,15 @@
+.friends-container {
+    margin-top: 10px;
+}
+
+.friends-input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.friends-list {
+    max-height: 200px; /* Set maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}

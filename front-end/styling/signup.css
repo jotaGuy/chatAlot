@@ -40,6 +40,7 @@ h2 {
     margin-top: 15px
 }
 
+/* css selector */
 #email-field {
     border: .5px solid black;
     background-color: #bebebe;
@@ -69,6 +70,7 @@ h2 {
     color: goldenrod;
 }
 
+/* css selector */
 #pass-reset:active {
     color: blue;
 }

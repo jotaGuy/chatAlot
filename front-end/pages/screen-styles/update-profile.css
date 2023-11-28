@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .top-nav {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  #themeDropdown {
+    margin-left: 10px;
+    height: 25px;
+    margin-top: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 250px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
